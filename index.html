@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Job Finder Portal</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f9fafc;
+      color: #333;
+    }
+
+    /* Header */
+    .header {
+      background: linear-gradient(90deg, #0047ab, #0077cc);
+      color: white;
+      text-align: center;
+      padding: 20px 10px;
+    }
+    .header h1 { margin: 0; font-size: 30px; }
+    .header p { margin: 5px 0 0; font-size: 15px; }
+
+    /* Social Media */
+    .social {
+      display: flex;
+      justify-content: center;
+      gap: 12px;
+      margin: 12px 0;
+      flex-wrap: wrap;
+    }
+    .social a {
+      padding: 8px 15px;
+      border-radius: 20px;
+      color: white;
+      font-weight: bold;
+      text-decoration: none;
+      font-size: 14px;
+      transition: 0.3s;
+    }
+    .whatsapp { background: #25D366; }
+    .telegram { background: #0088cc; }
+    .youtube { background: #FF0000; }
+    .facebook { background: #3b5998; }
+    .twitter { background: #1DA1F2; }
+    .social a:hover { opacity: 0.8; transform: scale(1.05); }
+
+    /* Navigation */
+    .nav {
+      background: #222;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+    .nav a {
+      color: white;
+      padding: 12px 18px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+    .nav a:hover { background: crimson; }
+
+    /* Search bar */
+    .search-box { text-align: center; margin: 15px; }
+    .search-box input {
+      padding: 10px;
+      width: 80%;
+      max-width: 500px;
+      border: 2px solid #0047ab;
+      border-radius: 5px;
+      font-size: 16px;
+    }
+
+    /* Google Ad Banner */
+    .ad-banner {
+      text-align: center;
+      background: #fff;
+      margin: 15px auto;
+      padding: 15px;
+      border: 2px dashed #ccc;
+      width: 90%;
+      border-radius: 6px;
+      font-size: 14px;
+    }
+
+    /* Section Cards */
+    .card {
+      background: white;
+      border-radius: 10px;
+      padding: 15px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      transition: 0.3s;
+    }
+    .card:hover { transform: translateY(-5px); }
+
+    /* Latest Jobs */
+    .latest-jobs {
+      width: 90%;
+      margin: 15px auto;
+    }
+    .latest-jobs h2 {
+      font-size: 22px;
+      margin-top: 0;
+      color: #0047ab;
+      border-bottom: 2px solid #0047ab;
+      padding-bottom: 5px;
+    }
+    .latest-jobs ul { margin: 0; padding-left: 20px; }
+
+    /* Four Sections */
+    .sections {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 15px;
+      margin: 15px;
+    }
+    .section-box h2 {
+      margin-top: 0;
+      font-size: 18px;
+      border-bottom: 2px solid rgba(255,255,255,0.6);
+      padding-bottom: 5px;
+    }
+    .section-box ul { margin: 0; padding-left: 20px; }
+    .central { background: #0077cc; color: #fff; }
+    .state { background: #28a745; color: #fff; }
+    .admit { background: #ff9800; color: #fff; }
+    .result { background: #e91e63; color: #fff; }
+
+    /* Two Column Section */
+    .two-column {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 15px;
+      margin: 15px;
+    }
+    .two-column h2 { color: #0047ab; }
+
+    /* Extra Sections */
+    .extras {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 15px;
+      margin: 15px;
+    }
+    .extras h2 { color: #444; }
+
+    /* Footer */
+    .footer {
+      background: #222;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      margin-top: 30px;
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <div class="header">
+    <h1>Job Finder</h1>
+    <p>Your Trusted Sarkari Job Portal</p>
+  </div>
+
+  <!-- Social Media Links -->
+  <div class="social">
+  <a href="https://whatsapp.com/channel/0029VanUAodFHWpwZeuQfe2j" class="whatsapp" target="_blank">
+    <i class="fab fa-whatsapp"></i> WhatsApp
+  </a>
+  <a href="#" class="telegram" target="_blank">
+    <i class="fab fa-telegram"></i> Telegram
+  </a>
+  <a href="#" class="youtube" target="_blank">
+    <i class="fab fa-youtube"></i> YouTube
+  </a>
+  <a href="#" class="facebook" target="_blank">
+    <i class="fab fa-facebook"></i> Facebook
+  </a>
+  <a href="#" class="twitter" target="_blank">
+    <i class="fab fa-twitter"></i> Twitter
+  </a>
+</div>
+
+  <!-- Navigation -->
+  <div class="nav">
+    <a href="index.html">Home</a>
+    <a href="#">Latest Jobs</a>
+    <a href="#">Admit Card</a>
+    <a href="#">Results</a>
+    <a href="#">Answer Key</a>
+  </div>
+
+  <!-- Search Box -->
+  <div class="search-box">
+    <input type="text" placeholder="🔍 Search Jobs, Admit Card, Results...">
+  </div>
+
+  <!-- Google Ad Banner -->
+  <div class="ad-banner">
+    <p>[ Google Ad Banner Space ]</p>
+  </div>
+
+  <!-- Latest Jobs -->
+  <div class="latest-jobs card">
+    <h2>🔥 Latest Jobs</h2>
+    <ul>
+      <li>SSC CGL 2025 Online Form</li>
+      <li>Haryana CET Group D Apply Online</li>
+      <li>Railway RRB ALP Recruitment</li>
+      <li>Delhi Police Constable Vacancy</li>
+    </ul>
+  </div>
+
+  <!-- Four Sections -->
+  <div class="sections">
+    <div class="card section-box central">
+      <h2>Central Govt Jobs</h2>
+      <ul>
+        <li> <a href="demopage.html">demo 2025 </a> </li>
+        <li>Railway NTPC</li>
+        <li>UPSC CDS Exam</li>
+      </ul>
+    </div>
+    <div class="card section-box state">
+      <h2>State Govt Jobs</h2>
+      <ul>
+        <li>HSSC CET Group C</li>
+        <li>Rajasthan Police</li>
+        <li>Punjab Clerk</li>
+      </ul>
+    </div>
+    <div class="card section-box admit">
+      <h2>Admit Cards</h2>
+      <ul>
+        <li>SSC GD Admit Card</li>
+        <li>UP Police PET Admit Card</li>
+        <li>Delhi Forest Guard</li>
+      </ul>
+    </div>
+    <div class="card section-box result">
+      <h2>Results</h2>
+      <ul>
+        <li>SSC CPO Final Result</li>
+        <li>Railway Group D Result</li>
+        <li>HSSC CET Result</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Upcoming & Exam Dates -->
+  <div class="two-column">
+    <div class="card">
+      <h2>📌 Upcoming Jobs</h2>
+      <ul>
+        <li>UPSC NDA 2025 Notification</li>
+        <li>HSSC Patwari Online Form</li>
+        <li>IBPS Clerk 2025</li>
+      </ul>
+    </div>
+    <div class="card">
+      <h2>📅 Exam Dates</h2>
+      <ul>
+        <li>SSC CGL Tier 1 – 12 Oct 2025</li>
+        <li>Railway ALP CBT – 20 Nov 2025</li>
+        <li>Haryana CET Group D – 5 Dec 2025</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Extra Sections -->
+  <div class="extras">
+    <div class="card">
+      <h2>💡 Govt Schemes</h2>
+      <ul>
+        <li>PM Kisan Yojana</li>
+        <li>Ayushman Bharat</li>
+        <li>Sukanya Samriddhi Yojana</li>
+      </ul>
+    </div>
+    <div class="card">
+      <h2>🛠 Free Tools</h2>
+      <ul>
+        <li>Photo Compressor</li>
+        <li>PDF Merger & Splitter</li>
+        <li>Age Calculator</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <div class="footer">
+    <p>© 2025 Job Finder | All Rights Reserved</p>
+  </div>
+
+</body>
+</html>
